@@ -162,6 +162,22 @@ export default function JSXRules() {
 
         {/* 올바른 예 */}
         <div className='container'>class → className </div>
+        <label htmlFor='username'>for → htmlFor</label>
+        <input type='text' id='username' />
+      </div>
+
+      <hr />
+
+      {/* 5. JSX에서 주석 작성하기  */}
+
+      <div>
+        <h2>5. JSX에서 주석 작성하기</h2>
+        {/* 이것은 JSX 내부의 주석입니다. */}
+
+        <p>주석은 {/* 이렇게 */} 중괄호를 감싸서 작성한다.</p>
+        {
+          // 한 줄 주석도 이렇게 작성할 수 있다.
+        }
       </div>
     </>
   );

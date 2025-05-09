@@ -16,6 +16,26 @@ export default function Home() {
           <Link href='/chap01/section03'>JSXRules</Link>
         </li>
       </ul>
+
+      <h3>chap02</h3>
+      <ul>
+        <li>
+          <Link href='/chap02/section01'>ComponentIntro</Link>
+        </li>
+        <li>
+          <Link href='/chap02/section02'>FunctionComponent</Link>
+        </li>
+      </ul>
+
+      <h3>chap03</h3>
+      <ul>
+        <li>
+          <Link href='/chap03/section01'>BasicEventHandling</Link>
+        </li>
+        <li>
+          <Link href='/chap03/section02'>EventTypes</Link>
+        </li>
+      </ul>
     </>
   );
 }
