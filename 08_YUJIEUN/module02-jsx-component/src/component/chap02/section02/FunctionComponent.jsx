@@ -60,6 +60,26 @@ export default function FunctionComponent() {
           </pre>
         </div>
       </section>
+
+      <section>
+        <h2>함수형 컴포넌트 사용 예시</h2>
+        <p>
+          아래는 <strong>Greeting</strong>이라는 이름의 함수형 컴포넌트를 정의하고 사용하는 예시이다.
+        </p>
+        <pre>
+          {`
+                function Greeting(props) {
+                    return <h1>Hello, {props.name}</h1>;
+                }
+                
+                // 컴포넌트 사용
+                <Greeting name="John" />
+            `}
+        </pre>
+        </section>
+        <div>
+          
+        </div>
     </div>
   );
 }
