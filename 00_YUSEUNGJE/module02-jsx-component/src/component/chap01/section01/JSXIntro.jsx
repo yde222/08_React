@@ -20,6 +20,28 @@ export default function JSXIntro() {
       <h2>안녕하세요!</h2>
       <p>{name}님 환영합니다.</p> {/* 중괄호를 사용해 JavaScript 표현식 삽입 */}
       <p>현재 시간: {new Date().toLocaleTimeString()}</p>
+      {/* JSX가 변환되는 과정 */}
+      <div>
+        <h2>JSX 변환 과정</h2>
+        <p>
+          위 JSX코드는 React.createElement() 함수 호출로 변환된다. 바벨(Babel)이
+          이 변환 작업을 처리한다.
+        </p>
+      </div>
+      {/* Virtual DOM */}
+      <div>
+        <h2>Virtual DOM과의 관계</h2>
+        <p>
+          JSX로 작성된 코드는 React 요소로 변환되고, 이 요소들이 Virtual DOM을
+          구성하게된다. React는 상태 변경 시 Virtual DOM을 효율적으로
+          업데이트한다.
+        </p>
+        <img
+          src='https://velog.velcdn.com/images/ksykma/post/824b6071-2888-4613-84b8-1a272a09224c/image.png'
+          width={"600px"}
+          height={"300px"}
+        />
+      </div>
     </div>
   );
 }
