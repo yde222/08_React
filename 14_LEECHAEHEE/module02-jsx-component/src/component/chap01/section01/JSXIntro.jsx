@@ -37,7 +37,7 @@ export default function JSXIntro() {
           업데이트한다.
         </p>
         <img
-          src="https://velog.velcdn.com/images/ksykma/post/824b6071-2888-4613-84b8-1a272a09224c/image.png"
+          src='https://velog.velcdn.com/images/ksykma/post/824b6071-2888-4613-84b8-1a272a09224c/image.png'
           width={"600px"}
           height={"300px"}
         />

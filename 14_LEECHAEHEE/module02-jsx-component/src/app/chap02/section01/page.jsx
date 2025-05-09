@@ -1,9 +1,7 @@
-import Component from "@/component/chap02/section01/Component";
+import ComponentIntro from "@/component/chap02/section01/Component";
 
-export default function Section01() {
-  return (
-  <div>
-    <Component />
-  </div>
-  );
+function Section01() {
+  return <ComponentIntro />;
 }
+
+export default Section01;

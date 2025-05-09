@@ -1,7 +1,7 @@
-import BasicEventHandling from '@/component/chap03/section01/BasicEventHandling';
+import BasicEventHandling from "@/component/chap03/section01/BasicEventHandling";
 
 export default function Section01() {
-  return(
+  return (
     <div>
       <BasicEventHandling />
     </div>
