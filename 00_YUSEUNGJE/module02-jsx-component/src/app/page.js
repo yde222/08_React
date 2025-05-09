@@ -9,6 +9,9 @@ export default function Home() {
         <li>
           <Link href='/chap01/section01'>JSXIntro</Link>
         </li>
+        <li>
+          <Link href='/chap01/section02'>JSXBasicSyntax</Link>
+        </li>
       </ul>
     </>
   );
