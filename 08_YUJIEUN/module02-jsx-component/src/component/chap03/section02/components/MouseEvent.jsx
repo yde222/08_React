@@ -1,40 +1,33 @@
 "use client";
 
 export default function MouseEvent() {
+  // 마우스 이벤트 핸들러
+  const handleMouseOver = (e) => {
+    console.log(`마우스가 오버되었습니다.`);
+    e.target.style.backgroundColor = "#f0f0f0";
+  };
 
-    // 마우스 클릭 이벤트 핸들러
-    const handleMouseOver =(e) => {
-        console.log("마우스가 요소 위에 있습니다.");
-        e.target.style.backgroundColor= "lightblue";
+  const handleMouseOut = (e) => {
+    console.log(`마우스가 떠났습니다.`);
+    e.target.style.backgroundColor = "transparent";
+  };
 
-    };
-
-    const handleMouseOut =(e) => {
-        console.log("마우스가 요소를 벗어났습니다.");
-        e.target.style.backgroundColor= "white";
-    };
-
-    return (
-        <>
-        <div style ={{ marginBottom: "20px"}}>
-            <h3>
-                마우스 이벤트(onMouseOVer, onMouserOut)
-            </h3>
-
-        </div>
+  return (
+    <>
+      <div style={{ marginBottom: "20px" }}>
+        <h3>마우스 이벤트(onMouseOver, onMouseOut)</h3>
         <div
-            style={{
-                padding: "20px",
-                border: "1px solid #ddd",
-                textAlign: "center",
-                lineHeight: "100px",
-                backgroundColor: "white",
-            }}
-            onMouseOver={handleMouseOver}
-            onMouseOut={handleMouseOut}
-        >   
+          style={{
+            padding: "10px",
+            border: "1px solid #ccc",
+            cursor: "pointer",
+          }}
+          onMouseOver={handleMouseOver}
+          onMouseOut={handleMouseOut}
+        >
+          마우스를 올려보세요
         </div>
-        </>
-    );
-
+      </div>
+    </>
+  );
 }
