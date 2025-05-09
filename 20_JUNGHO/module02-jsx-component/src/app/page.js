@@ -19,10 +19,27 @@ export default function page() {
           </li>
         </ul>
 
-        <h3>chap02</h3>
+        <hr />
+
+        <h1>chap02</h1>
         <ul>
           <li>
-            <Link href={"/chap02/section01"}>ComponentIntro</Link>
+            <Link href={"/chap02/section01"}>Component-Intro</Link>
+          </li>
+          <li>
+            <Link href={"/chap02/section02"}>Function-Component</Link>
+          </li>
+        </ul>
+
+        <hr />
+
+        <h1>chap03</h1>
+        <ul>
+          <li>
+            <Link href={"/chap03/section01"}>Basic-Event-Handling</Link>
+          </li>
+          <li>
+            <Link href={"/chap03/section02"}>Event-Type</Link>
           </li>
         </ul>
       </div>

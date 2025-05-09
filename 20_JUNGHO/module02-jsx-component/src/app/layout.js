@@ -1,6 +1,7 @@
 import Link from "next/link";
 import "./globals.css";
 import "./mainPage.css";
+import Time from "@/component/chap01/section01/Time";
 
 export const metadata = {
   title: "타이틀 태그에 들어갈 값", // <title> 태그에 들어갈 값
@@ -15,6 +16,10 @@ export default function RootLayout({ children }) {
           <h1>
             <Link href={"/"}>🏠</Link>
           </h1>
+          <p></p>
+          <span>
+            <Time />
+          </span>
         </header>
         {children}
       </body>
