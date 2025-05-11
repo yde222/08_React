@@ -166,12 +166,12 @@ export default function JSXRules() {
         {/* 올바른 예 */}
         <div className="container">class → className </div>
         <label htmlFor="username">for → htmlFor</label>
-        <input type='text' id='username' />
+        <input type="text" id="username" />
       </div>
 
       <hr />
 
-      {/* 5. JSX에서 주석 작성하기 */}
+      {/* 5. JSX에서 주석 작성하는 방법 */}
 
       <div>
         <h2>5. JSX에서 주석 작성하기</h2>
