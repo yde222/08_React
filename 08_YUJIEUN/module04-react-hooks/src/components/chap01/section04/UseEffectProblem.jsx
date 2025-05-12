@@ -1,23 +1,21 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function UseEffectProblem() {
+  const [count, setCount] = useState(0);
 
-    const[count,setCount] = useState(0);
+  useEffect(() => {
+    console.log(`useEffect 실행`);
 
-    useEffect (()=>{
-        console.log(`useEffect 실행`);
-    },[count]);
-    
-    return(
-        <div>
-            <h2>useEffect 문제 사례</h2>
-            <p>현재 카운트 : {count}</p>
-            
-            <button></button>
-        </div>
-    );
-    
+    // setCount(count + 1);
+  }, [count]);
+
+  return (
+    <div>
+      <h2>useEffect 문제 사례</h2>
+      <p>현재 카운트 : {count}</p>
+      <button onClick={() => setCount(count + 1 )}>수동으로 증가</button>
+    </div>
+  );
 }
-
