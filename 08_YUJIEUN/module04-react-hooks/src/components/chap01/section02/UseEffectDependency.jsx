@@ -17,9 +17,32 @@
 import { useState, useEffect } from 'react';
 
 export default function UseEffectDependency() {
+  const [text, setText] = useState('');
+  const [count, setCount] = useState(0);
+
+
+  useEffect(() => {
+    console.log('useEffect - text:', text);
+
+  },[]);
+
+
+  useEffect(() => {
+    console.log('useEffect - count:', count);
+    
+  },[]);
+
+  const handleClick = () => {
+    setCount(count + 1);
+  };
   return (
     <div>
-      <h2>check</h2>
+      <h2>useEffect 의존성 배열</h2>
+      <p>현재 카운트 : {count}</p>
+      <button onClick={handleClick}>카운트 증가</button>
+      <hr />
+      <input type ='text' value={text} onChange={(e) => setText(e.target.value)} />
+      <p>현재 텍스트 : {text}</p>
     </div>
   );
 }
