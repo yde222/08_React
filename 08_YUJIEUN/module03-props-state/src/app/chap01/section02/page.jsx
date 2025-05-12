@@ -1,9 +1,9 @@
-
+import UsingProps from "@/components/chap01/section02/UsingProps";
 
 function Section02() {
   return (
     <div>
-      <ChildUpdateParentState />
+      <UsingProps />
     </div>
   );
 }

@@ -1,4 +1,5 @@
-/*- Controlled Component(제어 컴포넌트)는 폼 입력 요소(input, textarea, select 등)의 값을 컴포넌트의 State로 제어하는 방식을 말한다.
+/*
+- Controlled Component(제어 컴포넌트)는 폼 입력 요소(input, textarea, select 등)의 값을 컴포넌트의 State로 제어하는 방식을 말한다.
 - 입력 요소의 value를 컴포넌트가 직접 소유하고 관리한다.
 
 
@@ -10,9 +11,20 @@
 - Uncontrolled: 입력값이 DOM에 직접 저장된다. (ex: ref 사용)
 */
 
-'use strict';
-import React, { useState } from 'react';
+"use client";
+
+import { useState } from "react";
 
 export default function SingleInputControl() {
-    
+  const [name, setName] = useState("");
+
+  return (
+    <div>
+      <h2>단일 입력값 제어</h2>
+      <input type='text' value={name} placeholder='이름을 입력하세요' />
+
+      <hr />
+      <p>입력한 이름: {name}</p>
+    </div>
+  );
 }

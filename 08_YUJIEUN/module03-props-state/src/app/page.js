@@ -7,25 +7,29 @@ export default function Home() {
       <h2>Props</h2>
       <ul>
         <li>
+          <Link href='/chap01/section01'>Props</Link>
+        </li>
+        <li>
+          <Link href='/chap01/section02'>Using Props</Link>
+        </li>
+      </ul>
+
+      <h1>State</h1>
+      <ul>
+        <li>
           <Link href='/chap02/section01'>State</Link>
         </li>
         <li>
           <Link href='/chap02/section02'>Child Update Parent State</Link>
         </li>
       </ul>
-      <h2>State</h2>
+
+      <h1>Controlled Component</h1>
       <ul>
         <li>
-          <Link href='/chap03/section01'>State</Link>
+          <Link href='/chap03/section01'>Single Input</Link>
         </li>
-        <li>
-          <Link href='/chap03/section01'>State</Link>
-        </li>
-        </ul>
-
-
+      </ul>
     </div>
-
-    
   );
 }
