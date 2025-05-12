@@ -1,6 +1,7 @@
 import AfterStateUpdateExample from "@/components/chap02/section01/counter/AfterStateUpdateExample";
 import Counter from "@/components/chap02/section01/counter/Counter";
 import CounterWithPrevState from "@/components/chap02/section01/counter/CounterWithPrevState";
+import UseStateStepByStep from "@/components/chap02/section01/counter/UseStateStepByStep";
 import StateCompoenet from "@/components/chap02/section01/StateCompoenet";
 
 function Section02() {
@@ -14,6 +15,8 @@ function Section02() {
       <CounterWithPrevState />
       <h2>상태가 변경된 후 특정 작업 수행</h2>
       <AfterStateUpdateExample />
+      <h2>UseState사용</h2>
+      <UseStateStepByStep />
     </div>
   );
 }
