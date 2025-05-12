@@ -3,7 +3,7 @@ import UseEffectDependency from "@/components/chap01/section02/UseEffectDependen
 function Section02() {
   return (
     <div>
-     <UseEffectDependency />
+      <UseEffectDependency />
     </div>
   );
 }
