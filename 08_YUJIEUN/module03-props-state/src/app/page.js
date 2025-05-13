@@ -30,6 +30,13 @@ export default function Home() {
           <Link href='/chap03/section01'>Single Input</Link>
         </li>
       </ul>
+
+      <h1>Controlled Component</h1>
+      <ul>
+        <li>
+          <Link href='/chap04/section01'>UseMemoExample</Link>
+        </li>
+      </ul>
     </div>
   );
 }
