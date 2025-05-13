@@ -20,9 +20,6 @@ export default function Home() {
         <li>
           <Link href='/loading'>/loading</Link>
         </li>
-        <li>
-          <Link href='/notF'>/NotPage</Link>
-        </li>
       </ul>
     </div>
   );
