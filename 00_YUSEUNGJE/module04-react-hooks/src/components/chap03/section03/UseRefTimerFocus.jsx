@@ -17,13 +17,24 @@
 import React, { useRef } from "react";
 
 function UseRefTimerFocus() {
-  // 타이머 ID를 저장할 ref : 초기값은 null
-  // ui 변경을 위한 ref : 초기값은 null
-  // 숫자를 셀수있는 ref : 초기값은 0
+  const timerRef = useRef(null); // 타이머 ID를 저장할 ref : 초기값은 null
+  const countDisplay = useRef(null); // ui 변경을 위한 ref : 초기값은 null
+  const count = useRef(0); // 숫자를 셀수있는 ref : 초기값은 0
 
-  const startTimer = () => {};
+  const startTimer = () => {
+    if (timerRef.current) return; // 이미 타이머가 실행 중이면 새로 시작하지 않음
 
-  const stopTimer = () => {};
+    timerRef.current = setInterval(() => {
+      count.current += 1;
+      countDisplay.current.textContent = `경과 시간: ${count.current}초`;
+    }, 1000);
+  };
+
+  const stopTimer = () => {
+    alert(`최종 기록된 시간: ${count.current}초`);
+    clearInterval(timerRef.current); // 타이머 종료
+    timerRef.current = null; // ref 초기화
+  };
 
   return (
     <div>
