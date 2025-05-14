@@ -1,29 +1,26 @@
-//useContext
-//사용자의 상태를 전역에서 관리하기 위한 컨텍스트 
+// useContext
+// 사용자의 상태를 전역에서 관리하기 위한 컨텍스트
 "use client";
 
-import { createContext,useState } from "react";
+import { createContext, useState } from "react";
 
-export const UserContext = createContext();
+export const UserContext = createContext(); // 사용자정보를 가지고있는 컨텍스트
 
-function UserProvider({children}){
-    const[user, serUser]= useState("Alice");
+function UserProvider({ children }) {
+  const [user, setUser] = useState(null);
 
-    const handleSetUser = (user) => {
-        if(user===('alice')){
-            setUser(null);
-        
-        }else{
-            setUser("alice");
-        }
-    
-    };
+  const handleSetUser = (user) => {
+    if (user === "alice") {
+      setUser(null);
+    } else {
+      setUser("alice");
+    }
+  };
 
-    return (
-        <UserContext.Provider value={{user,handleSetUser}}>
-            {children}
-        </UserContext.Provider>
-    );
+  return (
+    <UserContext.Provider value={{ user, handleSetUser }}>
+      {children}
+    </UserContext.Provider>
+  );
 }
-
 export default UserProvider;
