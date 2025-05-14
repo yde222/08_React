@@ -9,6 +9,13 @@ export default function Home() {
           <Link href='/router'>/RouterComponent</Link>
         </li>
 
+        <li>
+          <Link href='/nested'>/nested</Link>
+        </li>
+
+        <li>
+          <Link href='/parallel'>/parallel</Link>
+        </li>
       </ul>
 
     </div>
