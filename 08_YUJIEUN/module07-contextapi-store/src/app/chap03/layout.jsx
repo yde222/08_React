@@ -1,9 +1,15 @@
 "use client";
 
 import ThemeProvider from "./contexts/ThemeContext";
+import UserProvider from "./contexts/UserContext";
 
 function Layout({ children }) {
-  return <ThemeProvider>{children}</ThemeProvider>;
-}
+
+  return (
+    <UserProvider>
+  <ThemeProvider>{children}</ThemeProvider>;
+  </UserProvider>
+  );
+  }
 
 export default Layout;
